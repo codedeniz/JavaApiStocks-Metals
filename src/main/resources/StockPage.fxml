@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="StockPageController">
+    <top>
+        <Label text="Enter Stock Symbol (e.g., AAPL)" />
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <TextField fx:id="stockSymbolField" promptText="Stock Symbol" />
+            <Button text="Fetch Stock Data" onAction="#fetchStockData" />
+            <TextArea fx:id="resultArea" editable="false" wrapText="true" prefHeight="200" />
+            <Button text="Switch to Metals Page" onAction="#switchToMetalsPage" />
+        </VBox>
+    </center>
+</BorderPane>

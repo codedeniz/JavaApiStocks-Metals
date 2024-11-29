@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetalsPageController">
+    <top>
+        <Label text="Currency (e.g., USD)" />
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <TextField fx:id="metalField" promptText="Metal Symbol" />
+            <TextField fx:id="currencyField" promptText="Enter Metal Symbol (e.g., XAU,EUR,TRY,CAD)" />
+            <Button text="Fetch Metal Data" onAction="#fetchMetalData" />
+            <TextArea fx:id="resultArea" editable="false" wrapText="true" prefHeight="200" />
+            <Button text="Back to Stock Page" onAction="#goBackToStockPage" />
+        </VBox>
+    </center>
+</BorderPane>

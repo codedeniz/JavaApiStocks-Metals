@@ -1,0 +1,127 @@
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-base: #f0f0f0;
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333;
+}
+
+
+.text-field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-border-color: #ccc;
+    -fx-focus-color: #6c5ce7;
+}
+
+.text-field:focused {
+    -fx-border-color: #6c5ce7;
+    -fx-background-color: #fff;
+}
+
+.button {
+    -fx-background-color: #6c5ce7;
+    -fx-text-fill: white;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #5a4ac7;
+}
+
+.primary-button {
+    -fx-background-color: #6c5ce7;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #5a4ac7;
+}
+
+.back-button {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: #999;
+}
+
+
+.text-area {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 150px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-padding: 10px;
+    -fx-background-color: #fff;
+    -fx-focus-color: #6c5ce7;
+}
+
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+    -fx-padding: 20;
+}
+
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+
+.link {
+    -fx-text-fill: #6c5ce7;
+    -fx-font-weight: bold;
+}
+
+.link:hover {
+    -fx-text-fill: #5a4ac7;
+    -fx-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .text-field, .text-area, .button {
+        -fx-pref-width: 100%;
+    }
+
+    .vbox {
+        -fx-spacing: 10;
+    }
+
+    .hbox {
+        -fx-spacing: 5;
+    }
+}
